@@ -8,8 +8,6 @@
   <img alt="React" src="https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB?logo=react&logoColor=black" />
   <img alt="Node" src="https://img.shields.io/badge/Backend-Node.js%20%2B%20Express-339933?logo=nodedotjs&logoColor=white" />
   <img alt="Ollama" src="https://img.shields.io/badge/LLM-Ollama%20%2B%20Qwen3-111827" />
-  <img alt="Tests" src="https://img.shields.io/badge/Tests-66%20passing-brightgreen" />
-  <img alt="License" src="https://img.shields.io/badge/License-Add%20your%20license-lightgrey" />
 </p>
 
 > **Project status:** Local development / demonstration project. Movie metadata is retrieved from TMDB. Cinema schedules, seat inventory and bookings are simulated local data. No real ticket is issued and no payment is processed.
