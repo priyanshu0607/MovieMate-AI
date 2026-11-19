@@ -1,10 +1,6 @@
 # MovieMate — AI Movie Discovery & Cinema Assistant
 
 <p align="center">
-  <img src="docs/images/moviemate-system-architecture.png" alt="MovieMate system architecture infographic showing the overall architecture, agent execution loop, booking workflow, key components and technology stack" width="100%" />
-</p>
-
-<p align="center">
   <strong>A conversational movie assistant powered by a local LLM, tool calling, external movie data and stateful demo cinema workflows.</strong>
 </p>
 
@@ -56,7 +52,6 @@ MovieMate combines:
 |---|---|---|
 | Movie discovery | Search and recommend movies using natural-language requests and constraints such as genre, rating, year and result count. | TMDB + local intent/workflow logic |
 | Movie details | Retrieve movie metadata and details. | TMDB |
-| Trailer discovery | Find a trailer through YouTube search. | YouTube Data API when configured; otherwise a YouTube search-link fallback |
 | Streaming availability | Look up regional streaming-provider information where TMDB has data. | TMDB / selected region |
 | Cinema discovery | Find supported demo cinemas and search demo screenings by movie, genre, date, time, location and ticket-price constraints. | Local `cinema.json` dataset |
 | Location-aware search | Use browser-shared coordinates and Photon reverse geocoding to resolve a supported metro/locality. | Browser Geolocation + Photon / OpenStreetMap |
@@ -71,9 +66,8 @@ MovieMate combines:
 **Language handling:** a phrase such as “preferably in English” is not treated as a hard language filter or ranking preference in the current fresh-discovery flow. Matching results are not reordered just because English was mentioned.
 
 ## Architecture
-
 <p align="center">
-  <img src="docs/images/architecture.svg" alt="MovieMate architecture diagram" width="100%" />
+  <img src="docs/images/moviemate-system-architecture.png" alt="MovieMate system architecture infographic showing the overall architecture, agent execution loop, booking workflow, key components and technology stack" width="100%" />
 </p>
 
 ### Main components
