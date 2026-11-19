@@ -66,7 +66,6 @@ MovieMate combines:
 | Conversation continuity | Reload recent messages and continue a conversation using its conversation ID. | Local `moviemate.json` store |
 | Agent activity | Display workflow activity and execution timings in the frontend. | Express Server-Sent Events (SSE) + local activity records |
 
-**Language handling:** a phrase such as “preferably in English” is not treated as a hard language filter or ranking preference in the current fresh-discovery flow. Matching results are not reordered just because English was mentioned.
 
 ## Architecture
 
