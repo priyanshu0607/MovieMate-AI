@@ -1,0 +1,25 @@
+import { CheckCircle2, CircleAlert, LoaderCircle, Search, Wrench, BrainCircuit } from 'lucide-react';
+const labels = {
+  search_movies: 'Searching movie database', get_movie_details: 'Retrieving movie details',
+  find_streaming_providers: 'Checking streaming availability', search_movie_trailer: 'Finding trailers',
+  add_to_watchlist: 'Saving to watchlist', get_watchlist: 'Retrieving watchlist', remove_from_watchlist: 'Updating watchlist'
+};
+export default function AgentActivity({ events, busy }) {
+  if (!events.length && !busy) return <div className="activity-empty">Your agent's tool calls and decisions will appear here.</div>;
+  return <div className="activity-list">{events.map((event, i) => {
+    const isTool = event.type === 'tool_start' || event.type === 'tool_result';
+    const title = event.type === 'thinking' ? 'Planning next action' : event.type === 'status' ? event.message : labels[event.tool] || event.tool;
+    const result = event.type === 'tool_result';
+    return <div className="activity-item" key={`${i}-${event.type}`}>
+      <div className={`activity-icon ${result ? (event.success ? 'success' : 'failure') : ''}`}>
+        {result ? (event.success ? <CheckCircle2 size={15}/> : <CircleAlert size={15}/>) : event.type === 'thinking' ? <BrainCircuit size={15}/> : isTool ? <Wrench size={15}/> : <Search size={15}/>}
+      </div>
+      <div className="activity-copy"><strong>{title}</strong>
+        {event.type === 'tool_start' && <span>Executing tool…</span>}
+        {result && <span>{event.success ? 'Completed successfully' : event.error}</span>}
+        {event.type === 'thinking' && <span>Step {event.step}</span>}
+      </div>
+      {!result && (event.type === 'tool_start' || event.type === 'thinking') && <LoaderCircle className="spin" size={14}/>}
+    </div>;
+  })}</div>;
+}
