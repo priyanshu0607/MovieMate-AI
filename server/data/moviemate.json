@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "counters": {
+    "messages": 0,
+    "executions": 0,
+    "toolLogs": 0,
+    "activities": 0
+  },
+  "conversations": [],
+  "messages": [],
+  "conversation_states": [],
+  "watchlist": [],
+  "agent_executions": [],
+  "tool_logs": [],
+  "activity_events": []
+}
