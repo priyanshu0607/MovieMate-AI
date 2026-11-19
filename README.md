@@ -88,7 +88,7 @@ MovieMate combines:
 ### How the agent works
 
 <p align="center">
-  <img src="docs/images/agent-loop.svg" alt="MovieMate agent loop diagram" width="100%" />
+  <img src="docs/images/MovieMate AI Execution Loop.png" alt="MovieMate system architecture infographic showing the overall architecture, agent execution loop, booking workflow, key components and technology stack" width="100%" />
 </p>
 
 1. The user sends a message from the React chat interface.
