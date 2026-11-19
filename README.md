@@ -110,9 +110,46 @@ Ollama with Qwen3 remains the primary agent. If Groq is configured, MovieMate ma
 ## Booking workflow
 
 <p align="center">
-  <img src="docs/images/booking-flow.svg" alt="MovieMate simulated booking workflow" width="100%" />
+  <img src="docs/images/1.png" alt="MovieMate simulated booking workflow" width="100%" />
 </p>
 
+<p align="center">
+  <img src="docs/images/2.png" alt="MovieMate simulated booking workflow" width="100%" />
+</p>
+<p align="center">
+  <img src="docs/images/3.png" alt="MovieMate simulated booking workflow" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/images/4.png" alt="MovieMate simulated booking workflow" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/images/5.png" alt="MovieMate simulated booking workflow" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/images/6.png" alt="MovieMate simulated booking workflow" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/images/7.png" alt="MovieMate simulated booking workflow" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/images/8.png" alt="MovieMate simulated booking workflow" width="100%" />
+</p>
+<p align="center">
+  <img src="docs/images/9.png" alt="MovieMate simulated booking workflow" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/images/10th.png" alt="MovieMate simulated booking workflow" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/images/11th.png" alt="MovieMate simulated booking workflow" width="100%" />
+</p>
 A typical multi-turn flow looks like this:
 
 1. User: “Book two tickets for [movie title].”
