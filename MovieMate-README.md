@@ -56,8 +56,6 @@ MovieMate combines:
 |---|---|---|
 | Movie discovery | Search and recommend movies using natural-language requests and constraints such as genre, rating, year and result count. | TMDB + local intent/workflow logic |
 | Movie details | Retrieve movie metadata and details. | TMDB |
-| Trailer discovery | Find a trailer through YouTube search. | YouTube Data API when configured; otherwise a YouTube search-link fallback |
-| Streaming availability | Look up regional streaming-provider information where TMDB has data. | TMDB / selected region |
 | Cinema discovery | Find supported demo cinemas and search demo screenings by movie, genre, date, time, location and ticket-price constraints. | Local `cinema.json` dataset |
 | Location-aware search | Use browser-shared coordinates and Photon reverse geocoding to resolve a supported metro/locality. | Browser Geolocation + Photon / OpenStreetMap |
 | Seat availability | Inspect seat categories and availability for a demo screening. | Local `cinema.json` dataset |
